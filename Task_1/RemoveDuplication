@@ -14,14 +14,11 @@ void removeDuplication(int sorted_arr[] , int n ){
     bool flag = true;
     for(int i = 0 ; i < n ; i++){
         for(int j = 0 ; j < n ; j++){
-            std::cout << "second flag " << without_duplication[j] << " " <<sorted_arr[i] << std::endl;
             if(without_duplication[j] == sorted_arr[i]){
-                std::cout << "fourth flag " << std::endl;
                 flag = false ;
             }
         }
         if(flag){
-            std::cout<<"first flag : " << sorted_arr[i] << std::endl;
             without_duplication[k] = sorted_arr[i];
             k++;
         }
