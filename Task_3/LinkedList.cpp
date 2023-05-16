@@ -45,22 +45,6 @@ void LinkedList::clear()
     elcount = 0;
 }
 
-//LinkedList& LinkedList::operator=(const LinkedList & list)
-//{
-//    clear();
-//    elcount = list.elcount;
-//    head = list.copyData(list.head);
-//    tail = head;
-//    if (tail != nullptr)
-//    {
-//        while (tail->next != nullptr)
-//        {
-//            tail = tail->next;
-//        }
-//    }
-//    return *this;
-//}
-
 int& LinkedList::operator[](int index)
 {
     if (!IndexValid(index))
